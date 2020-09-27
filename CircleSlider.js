@@ -86,17 +86,7 @@ export default class CircleSlider extends Component {
         />
 
         <G x={endCoord.x - bR} y={endCoord.y - bR}>
-          {this.props.disable ? (
-            <Circle r={bR} cx={bR} cy={bR} fill={this.props.meterColor} />
-          ) : (
-            <Circle
-              r={bR}
-              cx={bR}
-              cy={bR}
-              fill={this.props.meterColor}
-              {...panResponder.panHandlers}
-            />
-          )}
+          <Circle r={bR} cx={bR} cy={bR} fill={this.props.meterColor} />
           <Text
             x={bR}
             y={bR + this.props.textSize / 2}
